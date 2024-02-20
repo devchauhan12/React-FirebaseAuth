@@ -68,7 +68,6 @@ const Login = () => {
     const checkUser = () => {
         signInWithEmailAndPassword(auth, input.email, input.password)
             .then((userCredential) => {
-                const user = userCredential.user;
                 Swal.fire({
                     title: "Login Successfully !",
                     text: "Visit our home page...",
